@@ -1,5 +1,5 @@
 A URL Shortening Service Coded In Django.
 
-Start this: 
+Start: 
 
 python manage.py runserver 
