@@ -20,10 +20,11 @@ def login(request):
                     return render(request, 'login.html', {'error': 'User Doesnt Exist'})
             else:
                 return render(request, 'login.html', {'error': 'Empty Fields'})
-        else:        
+        else:
             return render(request, 'login.html')
-    else: 
+    else:
         return redirect('/')
+
 
 def signup(request):
     if request.method == 'POST':

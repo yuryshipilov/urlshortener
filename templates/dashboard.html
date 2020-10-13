@@ -50,20 +50,20 @@
         </div>
     </div>
     <div class="row justify-content-between">
-       
-        
-            {% for u in urls %}
 
-                <div class="col-12">
-                Original : <a href="{{ u.original_url }}">{{ u.original_url }}</a>
-                Short : <a href="http://localhost:8000/{{ u.short_query }}">"http://localhost:8000/{{ u.short_query }}</a>>
-                <p>Visits : {{ u.visits }}</p>
-                </div>
-                
 
-            {% endfor %}
-    
-   
+        {% for u in urls %}
+
+        <div class="col-12">
+            Original : <a href="{{ u.original_url }}">{{ u.original_url }}</a>
+            Short : <a href="http://localhost:8000/{{ u.short_query }}">"http://localhost:8000/{{ u.short_query }}</a>>
+            <p>Visits : {{ u.visits }}</p>
+        </div>
+
+
+        {% endfor %}
+
+
     </div>
 </div>
 </div>

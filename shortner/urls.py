@@ -9,7 +9,7 @@ urlpatterns = [
     path('login/', login, name='login'),
     path('signup/', signup, name='signup'),
     path('logout/', logout, name='logout'),
-    path('dashboard/', dashboard, name = 'dashboard'),
+    path('dashboard/', dashboard, name='dashboard'),
     path('generate/', generate, name='generate'),
     path('<str:query>/', home, name='home'),
 ]

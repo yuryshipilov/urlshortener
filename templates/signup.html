@@ -7,12 +7,12 @@
         <div class="col-6 col-sm-6 col-md-5 col-lg-4 mx-auto">
             <h3>Signup </h3>
             {% if error %}
-                <div class="alert alert-danger alert-dismissible fade show" role='alert'>
-                    {{ error }}                
+            <div class="alert alert-danger alert-dismissible fade show" role='alert'>
+                {{ error }}
                 <button type="button" data-dismiss="alert" area-label="Close">
                     <span area-hidden-true>&times;</span>
                 </button>
-                </div>
+            </div>
             {% endif %}
             <form action="{% url 'signup' %}" method="POST">
                 {% csrf_token  %}
