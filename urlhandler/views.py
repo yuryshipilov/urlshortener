@@ -20,8 +20,6 @@ def randomgen():
 @login_required(login_url='/login/')
 def generate(request):
     if request.method == "POST":
-        # generate
-        pass
         if request.POST['original'] and request.POST['short']:
             # generate based on user input
             usr = request.user
